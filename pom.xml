@@ -31,13 +31,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- auth0 -->
-        <dependency>
-            <groupId>com.auth0</groupId>
-            <artifactId>mvc-auth-commons</artifactId>
-            <version>1.9.2</version>
-        </dependency>
-
         <!-- notification -->
         <dependency>
             <groupId>com.pusher</groupId>

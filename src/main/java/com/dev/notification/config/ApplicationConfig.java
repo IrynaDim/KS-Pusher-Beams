@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ApplicationConfig {
 
-    @Value(value = "${pusher.beams.id}")
+    @Value(value = "${pusher.instance.id}")
     private String pusherId;
 
-    @Value(value = "${pusher.beams.key}")
+    @Value(value = "${pusher.primary.key}")
     private String pusherSecretKey;
 
     @Bean

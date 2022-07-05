@@ -4,7 +4,6 @@ import com.dev.notification.exception.NotificationException;
 import com.pusher.pushnotifications.PushNotifications;
 import com.pusher.pushnotifications.PusherAuthError;
 import com.pusher.pushnotifications.PusherValidationError;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -31,7 +30,6 @@ public class NotificationServiceImpl implements NotificationService {
         this.beamsClient = beamsClient;
     }
 
-    @Scheduled(cron = "0 42 9 * * *")
     public void pushCommonNotification() {
         publish("test-push", "Knowledge sharing",
                 "Send push notification using Pusher Beams \u263a");
